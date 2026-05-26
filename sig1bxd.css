@@ -1,0 +1,79 @@
+@font-face { 
+	font-family: 'Saber'; 
+	src: url('https://raw.githubusercontent.com/nowcelestial/fonts/main/Saber.otf') format('opentype'), url('https://raw.githubusercontent.com/nowcelestial/fonts/main/saber-webfont.woff2') format('woff2'), url('https://raw.githubusercontent.com/nowcelestial/fonts/main/saber-webfont.woff') format('woff'); 
+	font-weight: normal; 
+	font-style: normal; 
+	font-display: swap; 
+} 
+
+.sig-bxd1 { 
+	font-family: 'saber'; 
+	text-align: center; 
+	position: relative; 
+	max-width: 100%; 
+	margin: auto; 
+	color: var(--bxd-1); 
+	font-feature-settings: "liga" 1, "calt" 1; 
+	font-variant-ligatures: common-ligatures discretionary-ligatures; 
+	display: flex; 
+	align-items: center; 
+	gap: 12px; 
+	justify-content: center; 
+} 
+
+.sig-wrapper { 
+	position: relative; 
+	display: inline-block; 
+} 
+
+.sig-arch {
+    width: 100px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 80px 80px 16px 16px;
+}
+
+.sig-arch img { 
+	display: block; 
+	width: 100%; 
+	height: 100%; 
+	object-fit: cover; } 
+
+	.sig-arch::before { 
+		content: ""; 
+		position: absolute; 
+		inset: 0; 
+		border-radius: inherit; 
+		border: 1px solid var(--bxd-1); 
+		pointer-events: none; 
+	} 
+
+	.sig-arch::after { 
+		content: ""; position: absolute; 
+		inset: 12px; border-radius: 168px 168px 10px 10px; border: 1px solid var(--bxd-2); pointer-events: none; } 
+
+		.sig-text { position: relative; text-align: left; } 
+
+.sig-text .title {
+    font-size: 26px;
+    line-height: 1;
+    margin-top: 12px;
+    font-weight: 400;
+    -webkit-writing-mode: vertical-rl;
+    color: var(--bxd-1);
+}
+		.sig-text .title span { display: block; margin-left: 30px; color:var(--bxd-2);} 
+		.sig-deco { position: absolute; border: 1px solid var(--bxd-1); border-radius: 50%; } 
+
+		.deco1 {
+  	  width: 90px;
+  	  height: 130%;
+  	  top: -7%;
+  	  transform: rotate(75deg);
+  	  mask: linear-gradient(to left, black, transparent 102%);
+  	  -webkit-mask: linear-gradient(to left, black, transparent 102%);
+		}
+
+
+		.deco2 { position: relative; color: var(--bxd-2); font-size: 36px;}
