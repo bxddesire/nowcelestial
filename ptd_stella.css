@@ -1,0 +1,340 @@
+/* ========================= TITRES ET ACCENTS ========================= */
+.stella h2 {
+    display: flex;
+    align-items: flex-start;
+    font-family: "Instrument Serif", serif !important;
+    font-size: 2rem;
+    letter-spacing: -1px;
+    text-transform: lowercase;
+    background: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.stella .pres_infog h2 {
+    place-content: center;
+}
+
+.stella .pres_img img {
+    border: 4px solid var(--cream);
+    box-shadow: 0 0 0 1px #8e2930, 0 14px 35px rgba(77, 16, 24, .28);
+    filter: saturate(.94) contrast(1.04) sepia(.05);
+}
+
+.stella .pres_sstt {
+    color: #8e382b;
+    letter-spacing: 2px;
+}
+
+.stella .cate_sslink a {
+    color: var(--wine);
+    border-color: rgba(124, 23, 36, .35);
+}
+
+.stella cc,
+.stella c1,
+.stella j6 {
+    color: var(--text-c2);
+}
+
+.stella blockquote {
+    padding: 15px;
+    margin: 25px 35px;
+    border-top: 1px solid var(--text-c2);
+    border-bottom: 1px solid var(--text-c2);
+    border-radius: 10px;
+    box-shadow: inset 0 1px rgba(255, 244, 223, .75), 0 10px 28px rgba(85, 18, 29, .08);
+}
+
+.stellatitle {
+    padding: 25px 0;
+    color: #fff4df;
+    font-family: "Playwrite US Trad", cursive;
+    font-size: 28px;
+    -webkit-text-stroke: 6px transparent;
+    background-image: linear-gradient(in oklch 90deg, #fff4df 8%, #e6a44c 22%, #d66a32 36%, #a52b26 50%, #7c1724 64%, #c7462d 78%, #f8ead2 92%, #fff4df);
+    background-size: 170% 100%;
+    background-clip: text;
+    filter: drop-shadow(2px 2px 2px rgba(85, 18, 29, .34));
+    transition: all .3s;
+    will-change: background-position, scale, filter;
+}
+
+.stellatitle:hover {
+    background-position: 100% 0;
+    scale: 1.05;
+    filter: drop-shadow(2px 2px 2px rgba(214, 106, 50, .26));
+}
+
+/* ========================= TITRE « KEEP THE LIGHT » ========================= */
+.stella .story_title {
+    position: relative;
+    isolation: isolate;
+    display: inline-flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 9px;
+    margin: 28px auto 34px;
+    padding: 9px 38px 13px;
+    color: var(--wine);
+    font-family: "Instrument Serif", Georgia, serif;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: -.3px;
+    line-height: 1.2;
+}
+
+.stella .story_title::before,
+.stella .story_title::after {
+    content: "";
+    position: absolute;
+    top: 55%;
+    width: 27px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(124, 23, 36, .52));
+}
+
+.stella .story_title::before {
+    left: 0;
+}
+
+.stella .story_title::after {
+    right: 0;
+    transform: rotate(180deg);
+}
+
+.stella .story_plain {
+    position: relative;
+    z-index: 2;
+}
+
+.stella .story_burning {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    color: var(--cherry);
+    font-family: "Playwrite US Trad", cursive;
+    font-size: 1.5rem;
+    font-weight: 350;
+    letter-spacing: -1.5px;
+    transform: rotate(-2deg);
+}
+
+.stella .story_burning::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 52%;
+    width: 92px;
+    height: 42px;
+    border: 2px solid #d66a32;
+    border-right-color: #8e2027;
+    border-bottom-color: #e6a44c;
+    border-radius: 50%;
+    opacity: .82;
+    transform: translate(-50%, -47%) rotate(-9deg);
+    box-shadow: 0 0 18px rgba(214, 106, 50, .13);
+}
+
+.stella .story_burning::after {
+    content: "\2726";
+    position: absolute;
+    top: -9px;
+    right: -18px;
+    color: var(--amber);
+    font-family: Georgia, serif;
+    font-size: 9px;
+    text-shadow: -73px 36px 0 rgba(124, 23, 36, .48);
+}
+
+/* ========================= CONVERSATION SMS ========================= */
+.pulse {
+    animation: pulse 1.25s ease-in-out infinite both;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+}
+
+#puppet {
+    width: 100%;
+    padding: 5px;
+    justify-items: center;
+}
+
+.puppet-head {
+    display: flex;
+    align-items: center;
+}
+
+.stella .puppet-alert {
+    color: var(--cherry);
+    font-family: "Geist Mono", monospace;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+.stella .puppet-av {
+    float: left;
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--cream);
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 0 1px var(--cherry), 0 5px 14px rgba(85, 18, 29, .2);
+}
+
+.stella .puppet-contact {
+    display: inline-block;
+    width: 240px;
+    height: 45px;
+    color: var(--wine);
+    font-family: "Instrument Serif", serif;
+    font-size: 26px;
+    line-height: 45px;
+    text-align: center;
+    text-shadow: 1px 1px 0 rgba(230, 164, 76, .28);
+}
+
+.stella .puppet-msg {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: 250px;
+    margin: 15px 0 0 5px;
+    padding: 0 5px 5px;
+    color: #777;
+    font-size: 12px;
+    overflow: auto;
+}
+
+.stella .puppet-msg p {
+    position: relative;
+    max-width: 80%;
+    margin: 6px 0 10px 15px;
+    padding: 10px;
+    border-radius: 6px;
+    line-height: 1.2;
+    box-shadow: 0 4px 12px rgba(85, 18, 29, .08);
+}
+
+.stella .puppet-msg p::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    border: 8px solid transparent;
+}
+
+.stella .puppet-msg p:nth-of-type(odd) {
+    align-self: flex-start;
+    color: var(--wine);
+    background: linear-gradient(135deg, #fff4df, #f1d7aa);
+    border: 1px solid rgba(230, 164, 76, .34);
+}
+
+.stella .puppet-msg p:nth-of-type(odd)::after {
+    left: 0;
+    margin-left: -8px;
+    border-left: 0;
+    border-right: 8px solid #f5dfbd;
+}
+
+.stella .puppet-msg p:nth-of-type(even) {
+    align-self: flex-end;
+    margin-right: 15px;
+    color: var(--cream);
+    background: linear-gradient(135deg, #7c1724, #b6382d 62%, #c7462d);
+    border: 1px solid rgba(85, 18, 29, .28);
+}
+
+.stella .puppet-msg p:nth-of-type(even)::after {
+    right: 0;
+    margin-right: -8px;
+    border-right: 0;
+    border-left: 8px solid #b6382d;
+}
+
+.stella .puppet-send {
+    box-sizing: content-box;
+    width: 80%;
+    height: 20px;
+    margin-top: 15px;
+    padding: 5px 25px 5px 10px;
+    color: #888;
+    font-family: var(--font-5);
+    font-size: 12px;
+    text-align: right;
+    text-transform: uppercase;
+    background: rgba(255, 244, 223, .72);
+    border: 1px solid rgba(124, 23, 36, .3);
+    border-radius: 15px;
+    box-shadow: inset 0 1px rgba(255, 255, 255, .7);
+}
+
+.stella .puppet-send span {
+    line-height: 20px;
+}
+
+.stella .puppet-icon {
+    float: left;
+    color: var(--wine) !important;
+    font-size: 18px;
+    text-align: center;
+}
+
+.stella .puppet-icon i,
+.stella .puppet-icon .bi,
+.stella .puppet-icon .bi::before {
+    color: var(--wine) !important;
+}
+
+@media (max-width: 520px) {
+    .stella .story_title {
+        gap: 5px;
+        padding-inline: 28px;
+        font-size: 20px;
+    }
+
+    .stella .story_burning::before {
+        width: 78px;
+        height: 36px;
+    }
+}
+
+/* ========================= PARAGRAPHE ENCADRÉ ========================= */
+.stella block {
+    display: block;
+    box-sizing: border-box;
+    width: 85%;
+    margin: 18px auto;
+    padding: 20px 25px;
+    color: var(--wine);
+    background: linear-gradient(135deg, rgba(255, 244, 223, .88), rgba(230, 164, 76, .18) 52%, rgba(198, 70, 45, .13));
+    border: 1px solid rgba(124, 23, 36, .34);
+    border-radius: 5px;
+    box-shadow: inset 0 1px rgba(255, 255, 255, .72), 0 7px 18px rgba(85, 18, 29, .1);
+}
+
+.stella block strong,
+.stella block b {
+    color: var(--cherry);
+}
+
+.stella block i,
+.stella block em {
+    color: #8e382b;
+}
