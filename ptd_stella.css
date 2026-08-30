@@ -323,7 +323,6 @@
     width: 85%;
     margin: 18px auto;
     padding: 20px 25px;
-    color: var(--wine);
     background: linear-gradient(135deg, rgba(255, 244, 223, .88), rgba(230, 164, 76, .18) 52%, rgba(198, 70, 45, .13));
     border: 1px solid rgba(124, 23, 36, .34);
     border-radius: 5px;
